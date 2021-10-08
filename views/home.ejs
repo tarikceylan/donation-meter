@@ -7,11 +7,34 @@
     <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani&family=Staatliches&display=swap" rel="stylesheet">   
 </head>
 
 <body>
+    <h1>DONATE NOW FOR STRAY ANIMALS!</h1>
+    
+    <div>
 
-    <h1>Total Donated Amount</h1>
+            <strong> <span style='font-weight: bold; color: rgb(153, 0, 0)'>$<%=total%> </span></strong> worth of total donations were made by <strong><%=count%></strong> generous people!
+               
+        <p><%=donatorName%></p>
+        <p><%=amount%></p>
+    </div>
+
+    <form method='POST' action='/donate'>
+        <input type='text' class='field'  name='first_name' placeholder='First Name' required>
+        <input type='text' class='field'  name='last_name' placeholder='Last Name' required>
+        <input type='number' class='field' name='donation_amount' min='0.01' max='999' step='.01' placeholder='Amount' required>
+        <input type='email' class='field' name='email' placeholder = 'E-Mail Address' required>
+        <button>Donate!</button>
+    </form>
 
 </body>
 

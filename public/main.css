@@ -1,7 +1,84 @@
+
 body {
-    background: rgb(182, 182, 182);
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
+    url('https://images.unsplash.com/photo-1558623535-33cc88178982?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80') center center no-repeat fixed;
+    
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #FFF;
+    
 }
+
 h1 {
     text-align: center;
-    color: rgb(255, 111, 111);
+    color: rgb(255, 255, 255);
+    font-size: 7.5em;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+
+form {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.field {
+    text-align: center;
+    width: 250px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px  solid  rgb(197, 197, 197,0.5);
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}   
+
+input:focus {
+    color: white;
+}
+
+::placeholder {
+    color: rgb(197, 197, 197);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    width: 275px;
+    font-size: 25px;
+    background-color: transparent;
+    height: 50px;
+    color: rgba(255, 255, 255);
+    border: 1px solid rgba(255,255,255,0.5); 
+    outline: none;
+    margin: 15px;
+}   
+
+button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.7s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
