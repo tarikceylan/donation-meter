@@ -2,14 +2,12 @@
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
     url('https://images.unsplash.com/photo-1558623535-33cc88178982?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80') center center no-repeat fixed;
-    
     background-size: cover;
     background-color: rgba(255, 0, 0, 0.1);
     color: #FFF;
-    
 }
 
-h1 {
+h1, h3 {
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 7.5em;
@@ -18,18 +16,55 @@ h1 {
 }
 
 
-form {
+.donateRouteBtn {
+    display: block;
+    margin: 25px auto; 
+    font-size: 31px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    width: 250px;
+    border: 1px solid white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#content {
+    display: block;
     margin: auto;
-    width: 50%;
     height: 100%;
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+form {
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(250,250,250,0.05);
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 20px;
+    z-index: 100;
 }
 
 .field {
     text-align: center;
     width: 250px;
     display: block;
-    margin: auto;
+    margin: 15px auto;
     padding: 10px;
     font-size: 20px;
     outline: none;
@@ -39,6 +74,23 @@ form {
     color: white;
     font-family: 'Rajdhani', sans-serif;
 }   
+
+button {
+    padding: 15px;
+    margin: 15px;
+    background: transparent;
+    color: white;
+    width: 50%;
+    border: 1px solid white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+button:hover {
+    color: black;
+    background: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
 input:focus {
     color: white;
@@ -52,24 +104,6 @@ input:focus::placeholder {
     color: transparent;
 }
 
-button {
-    text-align: center;
-    font-family: 'Rajdhani', sans-serif;
-    width: 275px;
-    font-size: 25px;
-    background-color: transparent;
-    height: 50px;
-    color: rgba(255, 255, 255);
-    border: 1px solid rgba(255,255,255,0.5); 
-    outline: none;
-    margin: 15px;
-}   
-
-button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.7s;
-}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,

@@ -57,6 +57,10 @@ app.get('/insertRows', (req, res) => {
     });
 });
 
+app.get('/donate', (req,res) => {
+    res.render('donate');
+});
+
 app.post('/donate', (req, res) => {
 
     let donator = {

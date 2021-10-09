@@ -18,23 +18,20 @@
 </head>
 
 <body>
-    <h1><span style='color: rgb(255,0,0);'>DONATE NOW</span> FOR<br> STRAY ANIMALS!</h1>
 
-    <div id= 'content'>
-        <p style='font-size: 72px; color: rgb(255, 255, 255); margin: 0'><strong> $<%=total%></strong></p>
-        <p style='font-size: 36px; margin: 0;'> of total donations were made by </p>
-        <p style='font-size: 62px; color: rgb(255, 0, 0); margin: 0;';><strong>-<%=count%>-</strong></p>
-        <p style='font-size: 31px; margin:0;'>generous people!</p>
+    <h3 style='font-size: 2em; margin-top: 50px;'><span>Every bit of your generous donation</span> <br> <span>
+        will be spent for the needs of stray animals </span><br>
+        <span> around the globe!</span></h3>
+    <div>
+        <form method='POST' action='/donate' class= 'centered'>
+            <input type='text' class='field'  name='first_name' placeholder='First Name' required>
+            <input type='text' class='field'  name='last_name' placeholder='Last Name' required>
+            <input type='number' class='field' name='donation_amount' min='0.01' max='999' step='.01' placeholder='Amount' required>
+            <input type='email' class='field' name='email' placeholder = 'E-Mail Address' required>
+            <button style='font-size: 20px;'>Donate!</button>
+        </form>
+    </div>
 
-        <a href='/donate' class='donateRouteBtn' type='button'>Donate Now!</a>
-
-    </div>  
-
-   <div style="text-align: center; font-size: 24px;  font-family: 'Rajdhani', sans-serif;">
-        <p><Strong>Latest Donator :  </Strong><span style='color: rgb(255, 0, 0);'><%=donatorName%></span> donated $<%=amount%></p>
-   </div>
-
-   
 </body>
 
 </html>
