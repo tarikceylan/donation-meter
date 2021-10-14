@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const faker = require('faker');
 
-const PORT = 3030;
+const PORT = 4040;
 
 const app = express();
 
